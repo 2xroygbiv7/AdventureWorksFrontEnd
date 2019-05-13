@@ -1,0 +1,23 @@
+<h1>Customer Listing</h1>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.IDCUST %></td>
+        <td><%= customer.NAMECUST %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+ 
+<br>
+ 
